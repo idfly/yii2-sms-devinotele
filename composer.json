@@ -1,0 +1,22 @@
+{
+  "name": "idfly/yii-sms",
+  "description": "Sms Devino Telecom component",
+  "keywords": [
+    "yii2",
+    "extension",
+    "sms"
+  ],
+  "type": "yii2-extension",
+  "support": {
+    "source": "https://bitbucket.org/idfly/yii2-sms"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "sms\\": ""
+    }
+  }
+}
