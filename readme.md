@@ -5,14 +5,14 @@
 {
     "require": {
         ...
-        "idfly/yii2-sms": "dev-master"
+        "idfly/yii2-sms-devinotele": "dev-master"
     },
     
     "repositories":[
         ...
         {
             "type": "git",
-            "url": "git@bitbucket.org:idfly/yii2-sms.git"
+            "url": "git@bitbucket.org:idfly/yii2-sms-devinotele.git"
         }
     ]
 }
