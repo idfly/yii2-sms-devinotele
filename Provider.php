@@ -1,10 +1,10 @@
 <?php
 
-namespace sms\components;
+namespace sms\devinotele;
 
 use yii\base\Component;
 
-class SmsDevinoTelecom extends Component
+class Provider extends Component
 {
     public $from;
 

@@ -28,7 +28,7 @@ composer install
 'components' => [
     ...
     'sms' => [
-        'class' => 'sms\components\SmsDevinoTelecom',        
+        'class' => 'sms\devinotele\Provider',        
         'from' => '%from%', // Один из адресов отправителя в личном кабинете: https://my.devinotele.com
         'login' => '%login%',
         'password' => '%passowrd%',
