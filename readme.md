@@ -29,11 +29,11 @@ composer install
     ...
     'sms' => [
         'class' => 'sms\components\SmsDevinoTelecom',        
-        'from' => '%from%', // TODO: need example
+        'from' => '%from%', // Один из адресов отправителя в личном кабинете: https://my.devinotele.com
         'login' => '%login%',
         'password' => '%passowrd%',
         'send_sms' => true,
-        'message_lifetime' => '?', // TODO: need example
+        'message_lifetime' => 0, // время жизни сообщения в минутах (если не доставлено в течении установленного времени - сообщение удаляется); 0 - бесконечно
     ],
     ...
 ]
