@@ -38,3 +38,7 @@ composer install
     ...
 ]
 ```
+
+Использвоать компонент можно так:
+
+``` \Yii::$app->sms->send($to, $text);```
