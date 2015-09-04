@@ -1,44 +1,40 @@
-### Подключение 
-В composer.json добавить
+# yii2-sms-devinotele
 
-```JSON
-{
-    "require": {
-        ...
-        "idfly/yii2-sms-devinotele": "dev-master"
-    },
-    
-    "repositories":[
-        ...
-        {
-            "type": "git",
-            "url": "git@bitbucket.org:idfly/yii2-sms-devinotele.git"
-        }
-    ]
-}
-```
+## Set
 
-Выполнить 
+1. To the project file `composer.json` add to the `require` section:
 
-```
-composer install
-```
+      `"idfly/yii2-sms-devinotele": "dev-master"`
+
+2. To the `repositories` section:
+      ```
+      {
+           "type": "git",
+           "url": "git@bitbucket.org:idfly/yii2-sms-devinotele.git"
+      }
+      ```
+
+3. Run `composer update`
+
+4. Place to the project's configuration file:
 
 ```
 'components' => [
     ...
     'sms' => [
         'class' => 'sms\devinotele\Provider',        
-        'from' => '%from%', // Один из адресов отправителя в личном кабинете: https://my.devinotele.com
+        'from' => '%from%', // one of the senders addresses in the account: https://my.devinotele.com
         'login' => '%login%',
         'password' => '%passowrd%',
         'send_sms' => true,
-        'message_lifetime' => 0, // время жизни сообщения в минутах (если не доставлено в течении установленного времени - сообщение удаляется); 0 - бесконечно
+        'message_lifetime' => 0, // lifetime of the message in minutes 
+        // (if the message is not delivered within lifetime the message is deleted); 0 - infinite
     ],
     ...
 ]
 ```
 
-Использвоать компонент можно так:
+Usage
+=============
 
 ``` \Yii::$app->sms->send($to, $text);```
